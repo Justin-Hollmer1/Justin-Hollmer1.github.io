@@ -28,6 +28,25 @@
 				padding: 0;
 				margin-bottom: 1em;
 			}
+			#head-section {
+				/*border: 1px solid red;*/
+				display: flex;
+			}
+			.head-text-section {
+				/*border: 1px solid green;*/
+				width: 50%;
+			}
+			.head-img-section {
+				display: flex;
+				/*border: 1px solid purple;*/
+				width: 50%;
+				justify-content: flex-end;
+				align-items: center;
+			}
+			.profile-img {
+				width: 60%;
+				border-radius: 50%;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -58,10 +77,15 @@
 
 				<!-- Banner -->
 					<section id="banner">
-						<div class="inner">
-							<div class="logo"><span class="icon fa-solid fa-keyboard"></span></div>
-							<h2>Justin Hollmer</h2>
-							<p>Full Stack Web Developer</p>
+						<div class="inner" id="head-section">
+							<div class="head-text-section">
+								<div class="logo"><span class="icon fa-solid fa-keyboard"></span></div>
+								<h2 style="text-align: center">Justin Hollmer</h2>
+								<p style="text-align: center">Full Stack Web Developer</p>
+							</div>
+							<div class="head-img-section">
+								<img src="images/Professional-picture.png" class="profile-img">
+							</div>
 						</div>
 					</section>
 
