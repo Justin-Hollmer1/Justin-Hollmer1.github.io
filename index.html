@@ -28,30 +28,37 @@
 				padding: 0;
 				margin-bottom: 1em;
 			}
-			#head-section {
-				/*border: 1px solid red;*/
-				display: flex;
+			@media screen and (min-width: 544px) {
+				#head-section {
+					/*border: 1px solid red;*/
+					display: flex;
+				}
+				.head-text-section {
+					/*border: 1px solid green;*/
+					width: 50%;
+				}
+				.head-img-section {
+					display: flex;
+					/*border: 1px solid purple;*/
+					width: 50%;
+					justify-content: flex-end;
+					align-items: center;
+					animation: ease-in 5s;
+				}
+				.profile-img {
+					width: 60%;
+					border-radius: 50%;
+					animation: fadeIn 4s;
+				}
+				@keyframes fadeIn {
+					0% {opacity: 0;}
+					100% {opacity: 1;}
+				}
 			}
-			.head-text-section {
-				/*border: 1px solid green;*/
-				width: 50%;
-			}
-			.head-img-section {
-				display: flex;
-				/*border: 1px solid purple;*/
-				width: 50%;
-				justify-content: flex-end;
-				align-items: center;
-				animation: ease-in 5s;
-			}
-			.profile-img {
-				width: 60%;
-				border-radius: 50%;
-				animation: fadeIn 4s;
-			}
-			@keyframes fadeIn {
-				0% {opacity: 0;}
-				100% {opacity: 1;}
+			@media screen and (max-width: 543px) {
+				.hiddenOnMobile {
+					display: none;
+				}
 			}
 		</style>
 	</head>
@@ -89,7 +96,7 @@
 								<h2 style="text-align: center">Justin Hollmer</h2>
 								<p style="text-align: center">Full Stack Web Developer</p>
 							</div>
-							<div class="head-img-section">
+							<div class="head-img-section hiddenOnMobile">
 								<img src="images/Professional-picture.png" class="profile-img">
 							</div>
 						</div>
